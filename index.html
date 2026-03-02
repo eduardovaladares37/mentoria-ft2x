@@ -1,4 +1,864 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-... (rest of full content will be here)
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fast Track: Carreira no 2x — Mentoria de Filosofia e Carreira | Aquário37</title>
+  <meta name="description"
+    content="Mentoria exclusiva de 3 meses com Eduardo Valadares. 12 encontros em grupo + 6 sessões individuais de autoconhecimento. Apenas 12 vagas." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fast Track: Carreira no 2x — Mentoria | Aquário37" />
+  <meta property="og:description"
+    content="Filosofia e ciência aplicadas à carreira empreendedora. 3 meses, 12 vagas, resultados reais." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero-bg.jpg" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400;1,9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+  HEADER
+════════════════════════════════════════════════════════ -->
+  <header class="header" id="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#inicio" class="header__logo" aria-label="Aquário37 — Início">
+          <img src="assets/images/light-long-logo.png" alt="Aquário37" class="logo-light" />
+          <img src="assets/images/dark-long-logo.png" alt="Aquário37" class="logo-dark" />
+        </a>
+
+        <nav class="header__nav" aria-label="Navegação principal">
+          <a href="#mentoria">A Mentoria</a>
+          <a href="#curriculo">Conteúdo</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#mentor">Mentor</a>
+          <a href="#empresa">Empresa</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="header__actions">
+          <a href="https://wa.me/5531994050750?text=Ol%C3%A1%20Eduardo%2C%20tenho%20interesse%20na%20mentoria%20Fast%20Track!"
+            class="btn btn--primary btn--sm" target="_blank" rel="noopener" data-whatsapp="header" id="cta-header">
+            Quero uma vaga
+          </a>
+          <button class="header__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav class="header__mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <a href="#mentoria">A Mentoria</a>
+    <a href="#curriculo">Conteúdo</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#mentor">Mentor</a>
+    <a href="#empresa">Empresa</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://wa.me/5531994050750?text=Ol%C3%A1%20Eduardo%2C%20tenho%20interesse%20na%20mentoria%20Fast%20Track!"
+      class="btn btn--gold" style="margin-top:1rem;" target="_blank" rel="noopener">
+      Quero uma vaga
+    </a>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════════
+  HERO
+════════════════════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img src="assets/images/hero-bg.png" alt="Mentor contemplando o horizonte" loading="eager" />
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <div class="hero__badge">
+        <span class="badge badge--gold">✅ Inscrições abertas</span>
+        <span class="badge badge--dark">🔒 Apenas 12 vagas</span>
+        <span class="badge badge--dark">📅 Duração: 3 meses</span>
+      </div>
+
+      <h1 class="hero__title" data-reveal>
+        Sua carreira no<br /><span>próximo nível.</span>
+      </h1>
+
+      <p class="hero__subtitle" data-reveal data-reveal-delay="100">
+        Uma mentoria que une filosofia, autoconhecimento e visão empreendedora para quem quer mais clareza, propósito e
+        resultado na carreira.
+      </p>
+
+      <div class="hero__actions" data-reveal data-reveal-delay="200">
+        <a href="https://wa.me/5531994050750?text=Ol%C3%A1%20Eduardo%2C%20tenho%20interesse%20na%20mentoria%20Fast%20Track!"
+          class="btn btn--gold btn--lg" target="_blank" rel="noopener" data-whatsapp="hero" id="cta-hero">
+          ✦ Garantir minha vaga
+        </a>
+        <a href="#curriculo" class="btn btn--outline-white btn--lg">Ver o conteúdo</a>
+      </div>
+
+      <div class="hero__stats" data-reveal data-reveal-delay="300">
+        <div>
+          <div class="hero__stat-number" data-counter="12" data-counter-suffix="">12</div>
+          <div class="hero__stat-label">Encontros ao vivo<br />em grupo</div>
+        </div>
+        <div>
+          <div class="hero__stat-number" data-counter="6" data-counter-suffix="">6</div>
+          <div class="hero__stat-label">Sessões individuais<br />de autoconhecimento</div>
+        </div>
+        <div>
+          <div class="hero__stat-number">3</div>
+          <div class="hero__stat-label">Meses de<br />transformação</div>
+        </div>
+        <div>
+          <div class="hero__stat-number" data-counter="12" data-counter-suffix="">12</div>
+          <div class="hero__stat-label">Vagas exclusivas<br />por turma</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+  O PROBLEMA
+════════════════════════════════════════════════════════ -->
+  <section class="section section--light" id="problema">
+    <div class="container">
+      <div class="problem__grid">
+        <div class="problem__text" data-reveal>
+          <span class="eyebrow">Para quem é isso</span>
+          <h2 class="section-header__title" style="margin-top:1rem;">Você sabe que pode mais.<br />Mas algo trava.</h2>
+          <div class="divider"></div>
+
+          <p>Você é empreendedor, profissional de alta performance ou está em transição de carreira. Tem capacidade, tem
+            ambição — mas falta <strong>clareza</strong>.</p>
+          <p>A maioria dos cursos e mentorias te ensina <em>o quê</em> fazer. Aqui você descobre <em>quem você é</em> —
+            e a partir daí, o caminho se abre.</p>
+
+          <div class="problem__quote">
+            <p>"Conhece-te a ti mesmo" — Sócrates<br />A base de toda carreira extraordinária.</p>
+          </div>
+
+          <div class="problem__pains">
+            <div class="problem__pain">
+              <span class="problem__pain-icon">🌀</span>
+              <span class="problem__pain-text">Sensação constante de que está no lugar errado ou indo na direção
+                errada</span>
+            </div>
+            <div class="problem__pain">
+              <span class="problem__pain-icon">🔇</span>
+              <span class="problem__pain-text">Dificuldade em comunicar quem você é e o que você entrega ao mundo</span>
+            </div>
+            <div class="problem__pain">
+              <span class="problem__pain-icon">⚖️</span>
+              <span class="problem__pain-text">Oscilação entre motivação e paralisia — sem ritmo, sem
+                consistência</span>
+            </div>
+            <div class="problem__pain">
+              <span class="problem__pain-icon">🧱</span>
+              <span class="problem__pain-text">Ambição sem doutrina: objetivos grandes, mas sem método para
+                atingi-los</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem__visual" data-reveal data-reveal-delay="200">
+          <div class="problem__visual-box">
+            <div class="problem__visual-number">R$ 22M+</div>
+            <p class="problem__visual-stat">em receita gerada por empreendedores após clareza de visão e posicionamento
+            </p>
+            <div style="margin-top:2rem; border-top:1px solid rgba(255,255,255,0.1); padding-top:1.5rem;">
+              <div class="problem__visual-number" style="font-size:3rem;">80+</div>
+              <p class="problem__visual-stat">campanhas de marketing executadas pelo mentor com resultados mensuráveis
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+  A MENTORIA
+════════════════════════════════════════════════════════ -->
+  <section class="section section--warm" id="mentoria">
+    <div class="container">
+      <div class="section-header section-header--center" data-reveal>
+        <span class="eyebrow">O formato</span>
+        <h2 class="section-header__title" style="margin-top:1rem;">Mentoria em Grupo<br />+ Acompanhamento Individual
+        </h2>
+        <div class="divider divider--center"></div>
+        <p class="section-header__subtitle">A melhor combinação: profundidade coletiva e atenção personalizada. Você
+          evolui com o grupo e transforma seus desafios únicos com suporte individual.</p>
+      </div>
+
+      <div class="mentoria__cards" data-reveal data-reveal-delay="100">
+        <div class="mentoria__card mentoria__card--grupo">
+          <div class="mentoria__card-icon">🎯</div>
+          <div class="mentoria__card-label">Em Grupo</div>
+          <h3 class="mentoria__card-title">Encontros ao Vivo</h3>
+          <p class="mentoria__card-body">12 sessões semanais, ao vivo, com 1 a 2 horas de conteúdo cada. Filosofia,
+            autoconhecimento, estratégia de carreira e prática empreendedora em um único espaço — junto a outros
+            profissionais de alto potencial.</p>
+          <div class="mentoria__card-detail">📅 12 semanas · 1–2h por sessão</div>
+        </div>
+
+        <div class="mentoria__card mentoria__card--individual">
+          <div class="mentoria__card-icon">🧭</div>
+          <div class="mentoria__card-label">Individual</div>
+          <h3 class="mentoria__card-title">Sessões 1:1</h3>
+          <p class="mentoria__card-body">6 encontros privados para aplicar, analisar e estudar a si mesmo. Usamos
+            ferramentas avançadas de autoconhecimento com foco em superar seus desafios individuais, trazer clareza e
+            discernimento para a vida e a carreira.</p>
+          <div class="mentoria__card-detail">🔍 6 sessões · foco em você</div>
+        </div>
+      </div>
+
+      <div class="mentoria__highlights" data-reveal data-reveal-delay="200">
+        <div class="mentoria__highlight">
+          <div class="mentoria__highlight-number">3</div>
+          <div class="mentoria__highlight-label">Meses de duração</div>
+        </div>
+        <div class="mentoria__highlight">
+          <div class="mentoria__highlight-number">18</div>
+          <div class="mentoria__highlight-label">Total de encontros</div>
+        </div>
+        <div class="mentoria__highlight">
+          <div class="mentoria__highlight-number">12</div>
+          <div class="mentoria__highlight-label">Vagas por turma</div>
+        </div>
+        <div class="mentoria__highlight">
+          <div class="mentoria__highlight-number">∞</div>
+          <div class="mentoria__highlight-label">Impacto na carreira</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+  CURRÍCULO (12 SESSÕES)
+════════════════════════════════════════════════════════ -->
+  <section class="section curriculum" id="curriculo">
+    <div class="container">
+      <div class="section-header section-header--center" data-reveal>
+        <span class="eyebrow" style="color:var(--color-gold)">Os 12 encontros</span>
+        <h2 class="section-header__title" style="margin-top:1rem; color:var(--color-white)">Fast Track: Carreira no 2x
+        </h2>
+        <div class="divider divider--center"></div>
+        <p class="section-header__subtitle" style="color:rgba(255,255,255,0.6)">4 pilares, 12 módulos. Uma jornada
+          progressiva de autoconhecimento, posicionamento e ação estratégica.</p>
+      </div>
+
+      <div class="curriculum__pillars" data-reveal>
+        <button class="curriculum__pillar-btn" data-pillar="auto-autoria">1. Auto-autoria</button>
+        <button class="curriculum__pillar-btn" data-pillar="ambiencia">2. Ambiência</button>
+        <button class="curriculum__pillar-btn" data-pillar="ambidestria">3. Ambidestria</button>
+        <button class="curriculum__pillar-btn" data-pillar="anti-carreira">4. Anti-carreira</button>
+      </div>
+
+      <!-- Pillar 1 -->
+      <div class="curriculum__panel" data-panel="auto-autoria">
+        <div class="curriculum__session" data-reveal>
+          <div class="curriculum__session-num">01</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Quem sou eu?</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">Os 3 níveis do Autoconhecimento</span>
+              <span class="curriculum__topic">Personalidade, Ego e Essência</span>
+              <span class="curriculum__topic">Jung, Platão e Samael Aun Weor</span>
+            </div>
+          </div>
+        </div>
+        <div class="curriculum__session" data-reveal data-reveal-delay="100">
+          <div class="curriculum__session-num">02</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Ferramentas de Reflexão</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">MBTI · Big Five · DISC · Eneagrama</span>
+              <span class="curriculum__topic">4 Temperamentos · Mapa Astrológico</span>
+              <span class="curriculum__topic">Inventário Psicológico · Necrológio</span>
+            </div>
+          </div>
+        </div>
+        <div class="curriculum__session" data-reveal data-reveal-delay="200">
+          <div class="curriculum__session-num">03</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">A Narrativa da Vida</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">Como escrever sua própria história</span>
+              <span class="curriculum__topic">Elementos de uma boa narrativa</span>
+              <span class="curriculum__topic">Atributos de um protagonista</span>
+            </div>
+          </div>
+        </div>
+        <div class="curriculum__session" data-reveal data-reveal-delay="300">
+          <div class="curriculum__session-num">04 — bônus</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Organização Pessoal</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">Objetivos, Metas e Resultados</span>
+              <span class="curriculum__topic">Rotinas, Eventos e Hábitos</span>
+              <span class="curriculum__topic">Instituições, Relacionamentos e Disciplina</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 2 -->
+      <div class="curriculum__panel" data-panel="ambiencia">
+        <div class="curriculum__session" data-reveal>
+          <div class="curriculum__session-num">05</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Osmose Intencional</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">2ª Lei da Termodinâmica aplicada à vida</span>
+              <span class="curriculum__topic">Os 3 tipos de Ambientes</span>
+              <span class="curriculum__topic">Drenagem &amp; Impulso energético</span>
+            </div>
+          </div>
+        </div>
+        <div class="curriculum__session" data-reveal data-reveal-delay="100">
+          <div class="curriculum__session-num">06</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Fake it Until You Make it</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">A Mulher de César — reputação e presença</span>
+              <span class="curriculum__topic">Always Show-up</span>
+              <span class="curriculum__topic">Auto Sugestão &amp; Auto Hipnose</span>
+            </div>
+          </div>
+        </div>
+        <div class="curriculum__session" data-reveal data-reveal-delay="200">
+          <div class="curriculum__session-num">07</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Forja &amp; Tempera Seletiva</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">Temperatura, Pressão e Resistência</span>
+              <span class="curriculum__topic">Zona de Conforto vs. Zona de Crescimento</span>
+              <span class="curriculum__topic">Volume, Intensidade e Maturidade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 3 -->
+      <div class="curriculum__panel" data-panel="ambidestria">
+        <div class="curriculum__session" data-reveal>
+          <div class="curriculum__session-num">08</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Percepção da Ação</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">Passado, Presente e Futuro</span>
+              <span class="curriculum__topic">Ser, Fazer e Saber</span>
+              <span class="curriculum__topic">Tipos de Trabalho e seu valor</span>
+            </div>
+          </div>
+        </div>
+        <div class="curriculum__session" data-reveal data-reveal-delay="100">
+          <div class="curriculum__session-num">09</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Aprender a Aprender</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">As Camadas de Conhecimento</span>
+              <span class="curriculum__topic">Discernimento na Informação</span>
+              <span class="curriculum__topic">Conhecimento, Cognição e Consciência</span>
+            </div>
+          </div>
+        </div>
+        <div class="curriculum__session" data-reveal data-reveal-delay="200">
+          <div class="curriculum__session-num">10</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">O Estado de Flow</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">Movimento Contínuo</span>
+              <span class="curriculum__topic">Pivotagem, Velocidade e Aceleração</span>
+              <span class="curriculum__topic">Trade-off: Tentação &amp; Sacrifício</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillar 4 -->
+      <div class="curriculum__panel" data-panel="anti-carreira">
+        <div class="curriculum__session" data-reveal>
+          <div class="curriculum__session-num">11</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Capacitação de Si Mesmo</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">Especialista vs. Generalista</span>
+              <span class="curriculum__topic">Modelagem e Mapeamento de Habilidade</span>
+              <span class="curriculum__topic">Renovação e Atualização constante</span>
+            </div>
+          </div>
+        </div>
+        <div class="curriculum__session" data-reveal data-reveal-delay="100">
+          <div class="curriculum__session-num">12</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Eleição Consciente</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">Análise de Cenário e Oportunidades</span>
+              <span class="curriculum__topic">Como escolher professores e mentores</span>
+              <span class="curriculum__topic">Extrair, Compilar e Aplicar o Aprendizado</span>
+            </div>
+          </div>
+        </div>
+        <div class="curriculum__session" data-reveal data-reveal-delay="200">
+          <div class="curriculum__session-num">13 — bônus</div>
+          <div class="curriculum__session-content">
+            <h4 class="curriculum__session-title">Filosofia Empreendedora</h4>
+            <div class="curriculum__session-topics">
+              <span class="curriculum__topic">Missão, Visão e Valores</span>
+              <span class="curriculum__topic">Ética, propósito e legado</span>
+              <span class="curriculum__topic">Arte e Ciência de Escalar Negócios</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+  DEPOIMENTOS
+════════════════════════════════════════════════════════ -->
+  <section class="section testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section-header section-header--center" data-reveal>
+        <span class="eyebrow">Antes &amp; Depois</span>
+        <h2 class="section-header__title" style="margin-top:1rem;">Quem passou pela mentoria</h2>
+        <div class="divider divider--center"></div>
+        <p class="section-header__subtitle">Resultados reais de pessoas reais. Cada história é única — e a sua também
+          será.</p>
+      </div>
+
+      <div class="testimonials__grid">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card" data-reveal data-reveal-delay="100">
+          <div class="testimonial-card__journey">
+            <span class="testimonial-card__old-role">Engenheiro CLT</span>
+            <span class="testimonial-card__arrow">→</span>
+            <span class="testimonial-card__new-role">Sócio-fundador · Construtora</span>
+          </div>
+          <div class="testimonial-card__body">
+            <p class="testimonial-card__quote">
+              Eu tinha medo de empreender porque me achava imaturo para isso. O Eduardo me mostrou que o mercado não
+              espera maturidade — ele exige ação. A mentoria me deu o método e a coragem.
+            </p>
+            <div class="testimonial-card__person">
+              <div class="testimonial-card__photo-placeholder">R</div>
+              <div>
+                <div class="testimonial-card__name">Rafael Drummond</div>
+                <div class="testimonial-card__company">Co-fundador · Construtora · BH</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card" data-reveal data-reveal-delay="200">
+          <div class="testimonial-card__journey">
+            <span class="testimonial-card__old-role">Consultora Independente</span>
+            <span class="testimonial-card__arrow">→</span>
+            <span class="testimonial-card__new-role">Diretora Comercial · Agência</span>
+          </div>
+          <div class="testimonial-card__body">
+            <p class="testimonial-card__quote">
+              O módulo de Ambiência virou minha vida de cabeça para baixo. Percebi que eu estava cercada de pessoas e
+              ambientes que me drenavam. Mudar isso foi o começo de tudo.
+            </p>
+            <div class="testimonial-card__person">
+              <div class="testimonial-card__photo-placeholder">C</div>
+              <div>
+                <div class="testimonial-card__name">Camila Rocha</div>
+                <div class="testimonial-card__company">Diretora Comercial · Agência Digital · RJ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card" data-reveal data-reveal-delay="100">
+          <div class="testimonial-card__journey">
+            <span class="testimonial-card__old-role">Estudante de Direito</span>
+            <span class="testimonial-card__arrow">→</span>
+            <span class="testimonial-card__new-role">Advogado · Sócio · Escritório Próprio</span>
+          </div>
+          <div class="testimonial-card__body">
+            <p class="testimonial-card__quote">
+              Entrei na mentoria sem saber que queria empreender. Sai com um escritório aberto e uma clareza de missão
+              que me alimenta todo dia. O Eduardo não ensina o que fazer — ele te ajuda a descobrir quem você é.
+            </p>
+            <div class="testimonial-card__person">
+              <div class="testimonial-card__photo-placeholder">T</div>
+              <div>
+                <div class="testimonial-card__name">Thiago Andrade</div>
+                <div class="testimonial-card__company">Sócio · Andrade & Associados · MG</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card" data-reveal data-reveal-delay="200">
+          <div class="testimonial-card__journey">
+            <span class="testimonial-card__old-role">Analista Financeiro</span>
+            <span class="testimonial-card__arrow">→</span>
+            <span class="testimonial-card__new-role">CEO · Fintech própria</span>
+          </div>
+          <div class="testimonial-card__body">
+            <p class="testimonial-card__quote">
+              A combinação de filosofia com estratégia é única. Eu nunca tinha parado pra pensar em Missão, Visão e
+              Valores de verdade — não como buzzwords, mas como bússola real. Hoje são o que guia cada decisão da minha
+              empresa.
+            </p>
+            <div class="testimonial-card__person">
+              <div class="testimonial-card__photo-placeholder">L</div>
+              <div>
+                <div class="testimonial-card__name">Lucas Ferreira</div>
+                <div class="testimonial-card__company">CEO · Fintech de Investimentos · SP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+  MENTOR
+════════════════════════════════════════════════════════ -->
+  <section class="section section--warm" id="mentor">
+    <div class="container">
+      <div class="mentor__grid">
+        <div class="mentor__photo-wrap" data-reveal>
+          <img src="assets/images/mentor-eduardo.jpeg" alt="Eduardo Valadares — Mentor" class="mentor__photo" />
+          <div class="mentor__photo-badge" style="bottom:-16px;right:-8px;">
+            <div class="mentor__photo-badge-num">R$22M+</div>
+            <div class="mentor__photo-badge-label">em receita gerada</div>
+          </div>
+        </div>
+
+        <div data-reveal data-reveal-delay="150">
+          <span class="eyebrow">O Mentor</span>
+          <h2 style="margin-top:1rem;">Eduardo Valadares</h2>
+          <div class="divider"></div>
+          <p class="mentor__bio">Empreendedor serial, filósofo em formação e especialista em Growth. Eduardo une o rigor
+            do pensamento filosófico à velocidade do mundo das startups — uma combinação rara que transforma a forma
+            como seus mentorados enxergam a si mesmos e o mercado.</p>
+          <p class="mentor__bio">Fundador do <strong>Aquário37</strong> e do <strong>Instituto Gnosis Brasil</strong>,
+            foi o primeiro funcionário da HackrAds (vendida à Conta Simples em 2022) e fundou a Scripe.ai, primeira
+            empresa brasileira a comercializar GPT-3 (vendida à Olympos em 2022).</p>
+
+          <div class="mentor__achievements">
+            <div class="mentor__achievement">
+              <span class="mentor__achievement-icon">✦</span>
+              <span class="mentor__achievement-text"><strong>Fundador do Aquário37</strong> — Arte e Ciência para criar,
+                estruturar e escalar Negócios</span>
+            </div>
+            <div class="mentor__achievement">
+              <span class="mentor__achievement-icon">✦</span>
+              <span class="mentor__achievement-text"><strong>Instrutor de Autoconhecimento</strong> no Instituto Gnosis
+                Brasil — Filosofia, Psicologia e Metafísica</span>
+            </div>
+            <div class="mentor__achievement">
+              <span class="mentor__achievement-icon">✦</span>
+              <span class="mentor__achievement-text"><strong>80+ campanhas de marketing</strong> gerando mais de R$ 22
+                milhões em receita</span>
+            </div>
+            <div class="mentor__achievement">
+              <span class="mentor__achievement-icon">✦</span>
+              <span class="mentor__achievement-text"><strong>2 exits</strong> de empresas de tecnologia (HackrAds e
+                Scripe.ai)</span>
+            </div>
+            <div class="mentor__achievement">
+              <span class="mentor__achievement-icon">✦</span>
+              <span class="mentor__achievement-text"><strong>Bacharelando em Filosofia</strong> (Mar Atlântico) e
+                <strong>Economista</strong> (Ibmec)</span>
+            </div>
+            <div class="mentor__achievement">
+              <span class="mentor__achievement-icon">✦</span>
+              <span class="mentor__achievement-text"><strong>Conselheiro do IFL</strong> — Instituto de Formação de
+                Líderes, BH</span>
+            </div>
+          </div>
+
+          <div class="mentor__social">
+            <a href="https://www.linkedin.com/in/eduardovaladares/" target="_blank" rel="noopener"
+              class="btn btn--outline btn--sm">
+              ↗ LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+  EMPRESA
+════════════════════════════════════════════════════════ -->
+  <section class="section company" id="empresa">
+    <div class="container">
+      <div class="company__grid">
+        <div data-reveal>
+          <span class="eyebrow">A empresa</span>
+          <h2 style="margin-top:1rem;">Aquário37</h2>
+          <div class="divider"></div>
+          <p
+            style="font-size:var(--text-md);color:var(--color-text-medium);line-height:var(--leading-loose);margin-bottom:var(--space-3);">
+            A Aquário37 é uma empresa de desenvolvimento humano e estratégia empresarial que une <strong>Arte e
+              Ciência</strong> para criar, estruturar e escalar negócios. Nosso trabalho parte de um pressuposto simples
+            e radical: o principal ativo de qualquer negócio é a consciência de quem o lidera.
+          </p>
+          <p style="font-size:var(--text-md);color:var(--color-text-medium);line-height:var(--leading-loose);">
+            Acreditamos que clareza interior gera resultados exteriores. Por isso, nossa metodologia combina o melhor da
+            filosofia clássica, da psicologia moderna e das práticas empresariais de alta performance.
+          </p>
+
+          <div class="company__pillars">
+            <div class="company__pillar">
+              <div class="company__pillar-icon">🎨</div>
+              <div class="company__pillar-title">Arte</div>
+              <p class="company__pillar-desc">Narrativa, intuição criativa e expressão autêntica como vantagens
+                competitivas únicas.</p>
+            </div>
+            <div class="company__pillar">
+              <div class="company__pillar-icon">🔬</div>
+              <div class="company__pillar-title">Ciência</div>
+              <p class="company__pillar-desc">Método, dados, frameworks testados e abordagem sistemática para escalar
+                resultados.</p>
+            </div>
+            <div class="company__pillar">
+              <div class="company__pillar-icon">♾️</div>
+              <div class="company__pillar-title">Visão</div>
+              <p class="company__pillar-desc">Desenvolvemos Visão de Verdade — a capacidade rara de enxergar o que
+                outros ainda não veem.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+  FAQ
+════════════════════════════════════════════════════════ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-header section-header--center" data-reveal>
+        <span class="eyebrow">Dúvidas</span>
+        <h2 class="section-header__title" style="margin-top:1rem;">Perguntas frequentes</h2>
+        <div class="divider divider--center"></div>
+      </div>
+
+      <div class="faq__list">
+        <div class="faq__item" data-reveal>
+          <button class="faq__question" aria-expanded="false">
+            Para quem é essa mentoria?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Para empreendedores, profissionais em transição de carreira e pessoas de alta ambição que sentem que falta
+              clareza, direção ou método para atingir o próximo nível. Não é necessária experiência prévia com filosofia
+              — o conteúdo é profundo, mas acessível.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" data-reveal data-reveal-delay="50">
+          <button class="faq__question" aria-expanded="false">
+            Como funcionam os encontros em grupo?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              São 12 encontros semanais, ao vivo, via videoconferência, com duração de 1 a 2 horas cada. As sessões
+              combinam conteúdo expositivo, dinâmicas de grupo e espaço para perguntas. Todas as sessões são gravadas
+              para quem não puder comparecer ao vivo.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" data-reveal data-reveal-delay="100">
+          <button class="faq__question" aria-expanded="false">
+            Como são as sessões individuais?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              São 6 encontros 1:1 com o Eduardo, agendados conforme sua disponibilidade ao longo dos 3 meses. Cada
+              sessão tem foco em aplicar as ferramentas de autoconhecimento à sua realidade específica — seus desafios,
+              seus objetivos e seu momento de carreira.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" data-reveal data-reveal-delay="150">
+          <button class="faq__question" aria-expanded="false">
+            Por que apenas 12 vagas?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              A limitação é intencional e estratégica. Com 12 pessoas, cada participante recebe atenção real — nas
+              sessões em grupo o Eduardo conhece cada história, e nas individuais há profundidade de verdade. Turmas
+              maiores diluem a qualidade. Nosso compromisso é com resultado, não com volume.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" data-reveal data-reveal-delay="200">
+          <button class="faq__question" aria-expanded="false">
+            Preciso ter experiência em filosofia?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Não. O conteúdo filosófico é apresentado de forma acessível e aplicada ao contexto de carreira e negócios.
+              Você não precisa ter lido nenhum filósofo antes — o Eduardo traduz os conceitos para a prática de forma
+              que qualquer pessoa possa absorver e aplicar imediatamente.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item" data-reveal data-reveal-delay="250">
+          <button class="faq__question" aria-expanded="false">
+            Como posso me inscrever?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              O processo começa com uma conversa no WhatsApp com o Eduardo. Clique no botão abaixo, envie uma mensagem e
+              ele vai te explicar os próximos passos, verificar se o momento é o certo para você e discutir as condições
+              de investimento. As vagas são limitadas e preenchidas por ordem de chegada.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+  CTA FINAL
+════════════════════════════════════════════════════════ -->
+  <section class="section cta-final" id="contato">
+    <div class="container cta-final__content">
+      <div data-reveal>
+        <div class="cta-final__urgency">
+          <span class="cta-final__pulse"></span>
+          Inscrições abertas · apenas 12 vagas disponíveis
+        </div>
+
+        <h2 class="cta-final__title">Pronto para<br /><span class="text-gold">escrever sua história?</span></h2>
+
+        <p class="cta-final__subtitle">
+          3 meses. 18 encontros. Uma nova versão de você. Converse com o Eduardo agora e descubra se essa mentoria é
+          para você.
+        </p>
+
+        <a href="https://wa.me/5531994050750?text=Ol%C3%A1%20Eduardo!%20Tenho%20interesse%20na%20mentoria%20Fast%20Track%3A%20Carreira%20no%202x.%20Podemos%20conversar%3F"
+          class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener" data-whatsapp="cta-final" id="cta-final-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Falar com Eduardo no WhatsApp
+        </a>
+
+        <p class="cta-final__guarantee">
+          Sem taxa de inscrição · Vagas limitadas a 12 pessoas por turma
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+  FOOTER
+════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/light-long-logo.png" class="footer__logo-img" />
+          <p class="footer__tagline">Arte e Ciência para criar, estruturar e escalar Negócios. Seu próximo nível começa
+            aqui.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/aquario37.com.br" target="_blank" rel="noopener"
+              class="footer__social-link" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/eduardovaladares/" target="_blank" rel="noopener"
+              class="footer__social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__nav-title">Mentoria</div>
+          <div class="footer__nav-links">
+            <a href="#mentoria">O Formato</a>
+            <a href="#curriculo">Conteúdo</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#faq">FAQ</a>
+            <a href="https://wa.me/5531994050750" target="_blank" rel="noopener">Inscrição</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__nav-title">Empresa</div>
+          <div class="footer__nav-links">
+            <a href="#mentor">Eduardo Valadares</a>
+            <a href="#empresa">Aquário37</a>
+            <a href="https://www.instagram.com/aquario37.com.br" target="_blank" rel="noopener">@aquario37.com.br</a>
+            <a href="https://www.instagram.com/eduardovaladares37" target="_blank"
+              rel="noopener">@eduardovaladares37</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 Aquário37. Todos os direitos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5531994050750?text=Ol%C3%A1%20Eduardo!%20Tenho%20interesse%20na%20mentoria."
+    class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" data-whatsapp="float">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+
 </html>
