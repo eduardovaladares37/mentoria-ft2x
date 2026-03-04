@@ -1,26 +1,21 @@
 /**
  * AQUÁRIO37 — Main JavaScript
  * ============================================================
- * ARCHITECTURE RULES:
- * - All DOM interactions go here (main.js)
- * - Scroll animations go in animations.js
- * - Do NOT add jQuery or large libraries without approval
- * - Keep functions small, named, and well-commented
- * - Use event delegation for dynamically created elements
+ * All DOM interactions and scroll animations in a single file.
+ * Uses IntersectionObserver (no dependencies).
  * ============================================================
  */
 
 (function () {
   'use strict';
 
-  /* ── DOM Ready ─────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', function () {
     initHeader();
     initMobileNav();
     initFAQ();
     initCurriculum();
     initSmoothScroll();
-    initWhatsApp();
+    initScrollAnimations();
   });
 
   /* ── Header: scroll effect ─────────────────────────────── */
@@ -39,7 +34,7 @@
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll(); // run once on load
+    onScroll();
   }
 
   /* ── Mobile Navigation ─────────────────────────────────── */
@@ -55,7 +50,6 @@
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
-    // Close on link click
     mobileNav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         toggle.classList.remove('is-open');
@@ -77,14 +71,12 @@
       question.addEventListener('click', function () {
         var isOpen = item.classList.contains('is-open');
 
-        // Close all others
         faqItems.forEach(function (other) {
           other.classList.remove('is-open');
           var q = other.querySelector('.faq__question');
           if (q) q.setAttribute('aria-expanded', 'false');
         });
 
-        // Toggle current
         if (!isOpen) {
           item.classList.add('is-open');
           question.setAttribute('aria-expanded', 'true');
@@ -103,18 +95,15 @@
       btn.addEventListener('click', function () {
         var target = btn.dataset.pillar;
 
-        // Update button states
         buttons.forEach(function (b) { b.classList.remove('is-active'); });
         btn.classList.add('is-active');
 
-        // Update panel visibility
         panels.forEach(function (panel) {
           panel.classList.toggle('is-active', panel.dataset.panel === target);
         });
       });
     });
 
-    // Activate first by default
     if (buttons[0]) buttons[0].click();
   }
 
@@ -138,14 +127,58 @@
     });
   }
 
-  /* ── WhatsApp CTA click tracking ──────────────────────── */
-  function initWhatsApp() {
-    document.querySelectorAll('[data-whatsapp]').forEach(function (el) {
-      el.addEventListener('click', function () {
-        // Optional: add analytics event here
-        // e.g. gtag('event', 'whatsapp_click', { section: el.dataset.whatsapp });
-      });
-    });
+  /* ── Scroll Reveal + Animated Counters (single observer) ── */
+  function initScrollAnimations() {
+    var revealElements = document.querySelectorAll('[data-reveal]');
+    var counterElements = document.querySelectorAll('[data-counter]');
+
+    if (!revealElements.length && !counterElements.length) return;
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+
+          var el = entry.target;
+
+          if (el.hasAttribute('data-reveal')) {
+            el.classList.add('is-visible');
+          }
+
+          if (el.hasAttribute('data-counter')) {
+            animateCounter(el);
+          }
+
+          observer.unobserve(el);
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    revealElements.forEach(function (el) { observer.observe(el); });
+    counterElements.forEach(function (el) { observer.observe(el); });
+  }
+
+  /* ── Counter animation helper ──────────────────────────── */
+  function animateCounter(el) {
+    var target = parseInt(el.dataset.counter, 10);
+    var duration = parseInt(el.dataset.counterDuration || '1500', 10);
+    var suffix = el.dataset.counterSuffix || '';
+    var startTime = null;
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      var value = Math.floor(easeOut(progress) * target);
+      el.textContent = value + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  function easeOut(t) {
+    return 1 - Math.pow(1 - t, 3);
   }
 
 })();
