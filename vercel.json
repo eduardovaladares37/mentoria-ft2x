@@ -1,6 +1,8 @@
 {
   "version": 2,
   "name": "aquario37-mentoria",
+  "buildCommand": "",
+  "outputDirectory": ".",
   "headers": [
     {
       "source": "/assets/(.*)",
